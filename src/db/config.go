@@ -16,7 +16,7 @@ var (
 
 func init() {
 	var err error
-	mysqlConnPool, err = sql.Open("mysql", "root:mysql123@tcp(localhost:3306)/")
+	mysqlConnPool, err = sql.Open("mysql", "root:root@tcp(localhost:3306)/")
 	if err != nil {
 		log.Fatal(err)
 	}
